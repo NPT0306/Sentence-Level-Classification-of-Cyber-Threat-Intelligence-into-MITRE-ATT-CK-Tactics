@@ -1,0 +1,574 @@
+text_clean,tactics,predicted,correct
+<ACTOR> 's Find-AVSignature AntivirusBypass module can be used to locate single byte anti-virus signatures.,stealth,discovery,False
+<ACTOR> 's loader can create a new service named NtmsSvc to execute the payload.,execution,persistence|privilege-escalation,False
+"<ACTOR> 's passw.plug plugin can gather account information from multiple instant messaging, email, and social media services, as well as FTP, VNC, and VPN clients.",credential-access,collection,False
+<ACTOR> accessed victim networks from VPN service provider networks.,resource-development,initial-access,False
+"<ACTOR> actors have mailed USB drives to potential victims containing malware that downloads and installs various backdoors, including in some cases for ransomware operations. Additionally, <ACTOR> has used malicious USBs that acted as virtual keyboards to install malware and txt files that decode to PowerShell commands.",initial-access|lateral-movement,initial-access,False
+<ACTOR> added a spoofed binary to the start-up folder for persistence.,persistence|privilege-escalation,persistence|privilege-escalation|stealth,False
+<ACTOR> adds itself as a shared object to the LD_PRELOAD environment variable.,execution|stealth,privilege-escalation|stealth,False
+<ACTOR> appends a total of 64MB of garbage data to a file to deter any security products in place that may be scanning files on disk.,stealth,defense-impairment,False
+<ACTOR> as leveraged Electron Applications to disable GPU sandboxing to avoid detection by security software.,stealth,defense-impairment|stealth,False
+<ACTOR> built adversary-in-the-middle DNS servers to impersonate legitimate services that were later used to capture credentials.,resource-development,collection|credential-access,False
+<ACTOR> can RC4-encrypt credentials before sending to the C2.,collection,command-and-control,False
+<ACTOR> can accept a command line argument identifying specific IPs.,discovery,discovery|execution,False
+<ACTOR> can add extra characters in encoded strings to help mimic DNS legitimate requests.,command-and-control,command-and-control|stealth,False
+<ACTOR> can attempt a CMSTP UAC bypass if it does not have administrative privileges.,stealth,privilege-escalation,False
+<ACTOR> can be configured to reconnect at certain intervals.,exfiltration,stealth,False
+<ACTOR> can be used to embed a PowerShell script within the pixels of a PNG file.,stealth,execution,False
+<ACTOR> can bypass UAC through creating the Registry key ` <REGKEY> NT\CurrentVersion\ICM\Calibration`.,privilege-escalation,persistence|privilege-escalation,False
+<ACTOR> can bypass standard user access controls by using stolen tokens to launch processes at an elevated security context.,privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> can call `ZwSetInformationThread` with the second argument set to `ThreadHideFromDebugger (0x11)` to evade being debugged.,discovery|stealth,stealth,False
+<ACTOR> can capture files from a targeted user's keychain directory.,credential-access,collection|credential-access,False
+"<ACTOR> can change the Registry values for Group Policy refresh time, to disable SmartScreen, and to disable Windows Defender.",defense-impairment|persistence,defense-impairment,False
+<ACTOR> can check for the existence of user email addresses using public Microsoft APIs.,reconnaissance,discovery,False
+<ACTOR> can check if a targeted machine is using a set of Eastern European languages and exit without infection if so.,discovery,discovery|stealth,False
+<ACTOR> can check the compromised host for processes associated with VMware or VirtualBox environments.,discovery|stealth,discovery,False
+<ACTOR> can collect email accounts from Microsoft Outlook and Mozilla Thunderbird.,discovery,collection|discovery,False
+<ACTOR> can compress 32-bit and 64-bit driver files with the Lempel-Ziv algorithm.,stealth,collection,False
+"<ACTOR> can conduct form grabbing, steal cookies, and extract data from HTTP sessions.",collection,collection|credential-access,False
+<ACTOR> can create HTA files to install Grunt listeners.,stealth,execution|persistence,False
+<ACTOR> can create Registry keys to bypass UAC and for persistence.,defense-impairment|persistence,defense-impairment|persistence|privilege-escalation,False
+<ACTOR> can create SCT files for installation via `Regsvr32` to deploy new Grunt listeners.,stealth,execution|stealth,False
+<ACTOR> can create a Windows account.,persistence,persistence|privilege-escalation,False
+<ACTOR> can create a backdoor by converting a domain to a federated domain which will be able to authenticate any user across the tenant. <ACTOR> can also modify DesktopSSO information.,defense-impairment|privilege-escalation,persistence,False
+"<ACTOR> can create a new service named msamger (Microsoft Security Accounts Manager), which mimics the legitimate Microsoft database by the same name.",stealth,persistence|stealth,False
+<ACTOR> can create a systemd service file for execution.,persistence|privilege-escalation,execution,False
+<ACTOR> can create and populate property list (plist) files to enable execution.,defense-impairment,discovery,False
+<ACTOR> can create bind and reverse shells on the infected system.,execution,execution|persistence,False
+<ACTOR> can create launchers via an InstallUtil XML file to install new Grunt listeners.,stealth,execution|persistence|privilege-escalation,False
+<ACTOR> can create system services to aid in executing the payload.,execution,execution|persistence,False
+<ACTOR> can delete log files on targeted systems.,defense-impairment,stealth,False
+<ACTOR> can delete log files through the use of wevtutil.,defense-impairment,stealth,False
+<ACTOR> can deobfuscate base64 encoded and RC4 encrypted C2 messages.,stealth,command-and-control|stealth,False
+<ACTOR> can deploy payloads capable of capturing credentials related to cryptocurrency wallets.,impact,collection|credential-access,False
+"<ACTOR> can determine if it is running in a virtualized environment by checking the OS version, checking the number of running processes, ensuring a 64-bit application is running on a 64-bit host, and checking if the host has a valid MAC address.",discovery|stealth,discovery,False
+<ACTOR> can directly download cloud user data such as OneDrive files.,exfiltration,command-and-control,False
+<ACTOR> can disable pop-up information about folders and desktop items and delete Registry keys to hide malicious services.,stealth,defense-impairment,False
+<ACTOR> can disable the VSS service on a compromised host using the service control manager.,impact,defense-impairment|impact,False
+<ACTOR> can embed a copy of PsExec within its payload and place it in the %Temp% directory under a randomly generated filename.,lateral-movement,stealth,False
+<ACTOR> can enable automatic logon through the `SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon` Registry key.,persistence|privilege-escalation,defense-impairment|persistence,False
+<ACTOR> can enable options for propogation through Group Policy Objects.,defense-impairment|privilege-escalation,defense-impairment,False
+<ACTOR> can enable/disable RDP connection and can start a remote desktop session using a browser web socket client.,lateral-movement,defense-impairment,False
+<ACTOR> can establish using a AppCertDLLs Registry key.,persistence|privilege-escalation,defense-impairment|persistence,False
+<ACTOR> can exclude files associated with core system functions from encryption.,discovery,stealth,False
+<ACTOR> can exclude specific directories and files from encryption.,discovery,discovery|stealth,False
+<ACTOR> can execute JavaScript by injecting it into the victim's browser.,execution,privilege-escalation|stealth,False
+<ACTOR> can execute Lazagne as well as Mimikatz using PowerShell.,credential-access,execution,False
+<ACTOR> can gather information about a tenant’s domains using public Microsoft APIs.,reconnaissance,discovery,False
+<ACTOR> can implant malicious code into a compromised device's firmware.,persistence|stealth,initial-access,False
+<ACTOR> can inject a malicious DLL (`PTASpy`) into the `AzureADConnectAuthenticationAgentService` to backdoor Azure AD Pass-Through Authentication.,credential-access|defense-impairment|persistence,privilege-escalation|stealth,False
+<ACTOR> can intercept and modify transaction details associated with hardware wallet applications before signing.,impact,defense-impairment,False
+"<ACTOR> can intercept the first client to server packet in the 3-way TCP handshake to determine if the packet contains the correct unique value for a specific <ACTOR> implant. If the value does not match, the packet and the rest of the TCP session are passed to the legitimate listening application.",command-and-control|persistence|stealth,command-and-control|defense-impairment,False
+<ACTOR> can leverage an exfiltration module to download arbitrary files from compromised machines.,collection,command-and-control|exfiltration,False
+<ACTOR> can leverage multiple techniques to bypass User Account Control (UAC) on Windows systems.,privilege-escalation,persistence|privilege-escalation,False
+<ACTOR> can list and manage startup entries.,persistence|privilege-escalation,discovery,False
+"<ACTOR> can listen and evaluate incoming commands on the domain socket, created by PITHOOK malware, located at `/data/runtime/cockpit/wd.fd` for a predefined magic byte sequence. <ACTOR> can then duplicate the socket for further communication over TLS.",command-and-control|persistence|stealth,command-and-control|stealth,False
+<ACTOR> can listen over the Unix domain socket located at `/data/runtime/cockpit/wd.fd`.,execution,discovery,False
+<ACTOR> can load drivers by creating a new service using the `CreateServiceW` API.,persistence|privilege-escalation,execution|persistence|privilege-escalation,False
+<ACTOR> can migrate the loader into another process.,privilege-escalation|stealth,persistence|privilege-escalation|stealth,False
+<ACTOR> can modify Group Policy to disable Windows Defender and to automatically infect devices in Windows domains.,defense-impairment|privilege-escalation,defense-impairment,False
+<ACTOR> can modify hardware wallet applications.,persistence,persistence|privilege-escalation,False
+<ACTOR> can modify the shortcut that launches Telegram by replacing its path with the malicious payload to launch with the legitimate executable.,persistence|privilege-escalation,persistence|privilege-escalation|stealth,False
+"<ACTOR> can monitor the `/proc/[PID]` directory of known <ACTOR> processes as a part of its persistence when executing with non-root permissions. If the process is found dead, it resurrects the process. <ACTOR> processes can be matched to an associated Advisory Lock, in the `/proc/locks` folder, to ensure it doesn't spawn more than one process.",discovery,persistence|privilege-escalation,False
+<ACTOR> can overwrite the ` <PATH> file on a targeted system.,defense-impairment,impact,False
+<ACTOR> can read files specified on the local system.,collection,discovery,False
+<ACTOR> can register a device to Azure AD.,persistence|privilege-escalation,defense-impairment,False
+<ACTOR> can require a specific password to be passed by command-line argument during execution which must match a pre-defined value in the configuration in order for it to continue execution.,stealth,execution|stealth,False
+<ACTOR> can retrieve information from the infected machine.,collection,discovery,False
+<ACTOR> can run a `Clear Agents Track` command on an infected machine to delete <ACTOR> -related logs.,stealth,defense-impairment,False
+"<ACTOR> can send information about the targeted system to C2 including captured passwords, OS build, hostname, and username.",exfiltration,discovery,False
+<ACTOR> can send randomly-generated data as part of its C2 communication.,command-and-control,exfiltration,False
+<ACTOR> can send registration information to C2 via HTTP `POST`.,command-and-control,exfiltration,False
+"<ACTOR> can send screenshots files, keylogger data, files, and recorded audio back to the C2 server.",exfiltration,collection|exfiltration,False
+<ACTOR> can sniff plaintext network credentials and use NBNS Spoofing to poison name services.,collection|credential-access,credential-access,False
+<ACTOR> can start a remote VNC session by downloading a new plugin.,lateral-movement,command-and-control|lateral-movement,False
+<ACTOR> can store configuration information in the Registry including the initialization vector and AES key needed to find and decrypt other <ACTOR> components.,defense-impairment|persistence,stealth,False
+<ACTOR> can support windows execution via SMB shares.,lateral-movement,execution|lateral-movement,False
+<ACTOR> can target directories on victim machines for file collection.,discovery,collection|discovery,False
+<ACTOR> can terminate a specific process by its process id.,persistence|privilege-escalation,defense-impairment,False
+<ACTOR> can upload data from the victim's machine to the C2 server.,collection,exfiltration,False
+<ACTOR> can use BITS Utility to connect with the C2 server.,execution|persistence|stealth,command-and-control,False
+<ACTOR> can use HTTP POST requests to exfiltrate data from compromised hosts to C2.,command-and-control,command-and-control|exfiltration,False
+<ACTOR> can use HTTP to send victim host information to C2.,command-and-control,exfiltration,False
+<ACTOR> can use Lazagne for harvesting credentials.,credential-access,collection|credential-access,False
+<ACTOR> can use SSH to transfer information to C2.,command-and-control,command-and-control|lateral-movement,False
+<ACTOR> can use WMIC to change the Volume Shadow Copy Service (VSS) startup type to manual.,execution,persistence|privilege-escalation,False
+<ACTOR> can use Winlogon Helper DLL to establish persistence.,persistence|privilege-escalation,execution|persistence|privilege-escalation,False
+<ACTOR> can use `GetlogicalDrives` to get a bitmask of all drives available on a compromised system. It can also use `GetDriveType` to determine if a new drive is a CD-ROM drive.,discovery,credential-access,False
+<ACTOR> can use a `Put` command to write files to an infected machine.,command-and-control,execution,False
+"<ACTOR> can use an AutoIT script to decrypt a payload file, load it into victim memory, then execute it on the victim machine.",execution,execution|stealth,False
+<ACTOR> can use symbolic links to redirect file paths for remote and local objects and can use `chmod +x` to make its payload binary executable.,defense-impairment,execution|stealth,False
+<ACTOR> can use the PowerShell module `InvokeGPUpdate` to modify Group Policy.,execution,defense-impairment,False
+<ACTOR> can use the Splashtop remote management service (SRManager.exe) to execute the Linux ransomware binary directly on Windows systems.,command-and-control,execution,False
+<ACTOR> can use the `QueueUserAPC` API to execute shellcode on a compromised machine.,privilege-escalation|stealth,execution,False
+<ACTOR> can use the `ZwSetInformationThread` to enable debugger evasion.,execution,stealth,False
+<ACTOR> can use the ps command to discover other cryptocurrency miners active on the system.,discovery,discovery|impact,False
+<ACTOR> can use the schtasks utility to bypass UAC.,execution|persistence|privilege-escalation,privilege-escalation,False
+<ACTOR> can user PowerView to execute “net user” commands and create local system accounts.,persistence,persistence|privilege-escalation,False
+<ACTOR> can utilize decoy command and control domains within the malware configuration to circumvent sandbox analysis.,discovery|stealth,stealth,False
+<ACTOR> can utilize hardcoded command and control domain configurations created by the <ACTOR> authors. These are designed to mimic domain registrars and hosting service providers such as Hostinger and Namecheap.,resource-development,command-and-control,False
+<ACTOR> captured credentials for or impersonated domain administration users.,initial-access|persistence|privilege-escalation|stealth,stealth,False
+<ACTOR> checks for files related to known sandboxes.,discovery|stealth,discovery,False
+"<ACTOR> checks the effective group ID of its process when initially executed to determine if it is in group 0, denoting superuser privileges in Linux environments.",discovery,discovery|stealth,False
+"<ACTOR> collected data from the victim's local system, including password hashes from the SAM hive in the Registry.",collection,collection|credential-access,False
+<ACTOR> collected victim device information then transmitted this via HTTP POST to command and control infrastructure.,command-and-control,discovery,False
+<ACTOR> collects Windows account hashes.,credential-access,credential-access|discovery,False
+<ACTOR> collects local files and information from the victim’s local machine.,collection,collection|discovery,False
+<ACTOR> command and control includes hard-coded domains in the malware chosen to masquerade as legitimate services such as Akamai CDN or Amazon Web Services.,resource-development,stealth,False
+<ACTOR> command and control includes hard-coded domains in the malware masquerading as legitimate services such as Akamai CDN or Amazon Web Services.,command-and-control,stealth,False
+<ACTOR> configures itself as a service.,persistence|privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> constructed a valid authentication token following Microsoft Exchange exploitation to allow for follow-on privileged command execution.,privilege-escalation|stealth,persistence|privilege-escalation|stealth,False
+<ACTOR> contains a collection of Privesc-PowerUp modules that can discover and exploit path interception opportunities in the PATH environment variable.,execution|stealth,discovery|execution|stealth,False
+"<ACTOR> contains a collection of Privesc-PowerUp modules that can discover and replace/modify service binaries, paths, and configs.",persistence|privilege-escalation,execution|stealth,False
+<ACTOR> contains a collection of ScriptModification modules that compress and encode scripts and payloads.,stealth,collection,False
+<ACTOR> contains a custom version of the RC4 algorithm that includes a programming error.,command-and-control,stealth,False
+<ACTOR> created a local account on victim machines to maintain access.,persistence,persistence|privilege-escalation,False
+<ACTOR> created adversary-in-the-middle servers to impersonate legitimate services and enable credential capture.,resource-development,stealth,False
+<ACTOR> created code signing certificates to sign malicious macOS files.,resource-development,defense-impairment|resource-development,False
+<ACTOR> created high-privileged domain user accounts to maintain access to victim networks.,persistence,initial-access|persistence|privilege-escalation,False
+<ACTOR> created new Windows services for persistence that masqueraded as legitimate Windows services via name change.,persistence|privilege-escalation,stealth,False
+<ACTOR> created privileged domain accounts during intrusions.,persistence,persistence|privilege-escalation,False
+<ACTOR> creates a Launch Agent on macOS.,persistence|privilege-escalation,persistence,False
+"<ACTOR> creates a local user account, SafeMode, via net user commands.",persistence,persistence|privilege-escalation,False
+"<ACTOR> creates a log file for capturing keylogging, clipboard, and related data using the victim host's current date for the filename. <ACTOR> queries victim system epoch time during execution. <ACTOR> captures system time information as part of automated profiling on initial installation.",discovery,collection,False
+<ACTOR> creates a new key pair with ssh-keygen and drops the newly created user key in authorized_keys to enable remote login.,persistence|privilege-escalation,persistence|privilege-escalation|stealth,False
+<ACTOR> creates a user account as a means to provide initial persistence to the compromised machine.,persistence,persistence|privilege-escalation,False
+"<ACTOR> delivered malicious documents with the XLSX extension, typically used by OpenXML documents, but the file itself was actually an OLE (XLS) document.",stealth,execution|stealth,False
+<ACTOR> discovered system proxy settings and used them if available.,command-and-control,discovery,False
+<ACTOR> downloaded source code files from remote addresses then compiled them locally via GCC in victim environments.,stealth,collection,False
+<ACTOR> downloads have been hosted on Google Docs.,command-and-control,resource-development,False
+<ACTOR> dropped and added officeupdate.exe to scheduled tasks.,execution|persistence|privilege-escalation,persistence|privilege-escalation|stealth,False
+<ACTOR> drops a file named infpub.datinto the Windows directory and is executed through SCManager and rundll.exe.,execution,execution|stealth,False
+"<ACTOR> edits the Registry key <REGKEY> to execute a malicious AutoIt script. When eventvwr.exe is executed, this will call the Microsoft Management Console (mmc.exe), which in turn references the modified Registry key.",execution|stealth,defense-impairment|persistence|privilege-escalation,False
+<ACTOR> enables SMBv1 during execution.,defense-impairment,lateral-movement,False
+<ACTOR> encrypts data using Base64 before being sent to the command and control server.,collection,command-and-control|stealth,False
+<ACTOR> encrypts exfiltrated data with RC4.,command-and-control,exfiltration,False
+"<ACTOR> executed SnappyTCP using the tool NoHup, which keeps the malware running on a system after exiting the shell or terminal.",stealth,execution,False
+<ACTOR> executes a Windows Batch script during installation that creases a randomly-named directory in the <PATH> root directory that copies and renames the legitimate Windows <curl>curl command to this new location.,stealth,execution|privilege-escalation,False
+<ACTOR> executes shellcode and a VBA script to decode Base64 strings.,execution,stealth,False
+<ACTOR> exfiltrates data using cookie values that are Base64-encoded.,command-and-control,exfiltration,False
+<ACTOR> exploited CVE-2022-22948 in VMware vCenter to obtain encrypted credentials from the vCenter postgresDB.,credential-access,initial-access,False
+<ACTOR> gathers victim system information such as enumerating the volume of a given device or extracting system and security event logs for analysis.,collection,discovery,False
+<ACTOR> has a built-in `procdump` command allowing for retrieval of memory from processes such as `lsass.exe` for credential harvesting.,credential-access,collection|credential-access,False
+<ACTOR> has a plugin for VNC and Ammyy Admin Tool.,command-and-control,lateral-movement,False
+<ACTOR> has a plugin system that can load specially made DLLs into memory and execute their functions.,stealth,privilege-escalation|stealth,False
+<ACTOR> has abused default user names and passwords in externally-accessible IP cameras for initial access.,initial-access|persistence|privilege-escalation|stealth,initial-access,False
+<ACTOR> has abused network management tools to include RANCID to facilitate actions in victims’ environments.,execution|lateral-movement,lateral-movement,False
+<ACTOR> has abused peer connections to exfiltrate data.,defense-impairment,command-and-control|exfiltration,False
+<ACTOR> has also leveraged GitHub actions from stolen accounts in order to create a malicious Github workflow within `.github/workflows/discussion.yaml`.,execution,command-and-control,False
+<ACTOR> has appended copies of the ntds.dit database with a .gif file extension.,stealth,collection,False
+<ACTOR> has attempted to acquire credentials by dumping network device configurations. <ACTOR> has also obtained data using RANCID.,collection,credential-access,False
+<ACTOR> has attempted to bypass Windows Antimalware Scan Interface (AMSI) by removing the string “AmsiScanBuffer” from the “clr.dll” module in memory to prevent it from being called.,defense-impairment,stealth,False
+<ACTOR> has attempted to bypass digital signature verification checks at startup by adding a command to the startup config `/etc/init.d/localnet` within the rootfs.gz archive of both FortiManager and FortiAnalyzer devices.,persistence|privilege-escalation,defense-impairment,False
+<ACTOR> has attempted to collect browser information.,collection,discovery,False
+<ACTOR> has attempted to gain root access by leveraging `sudo` and `/etc/sudoers.d`.,privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> has attempted to stop endpoint detection and response (EDR) tools on compromised systems.,defense-impairment,discovery,False
+<ACTOR> has attempted to transfer USBferry from an infected USB device by copying an Autorun function to the target machine.,initial-access|lateral-movement,command-and-control|lateral-movement,False
+<ACTOR> has augmented its installation process by having its original install process exit cleanly to provide the user with the illusion that the service is installed normally.,stealth,privilege-escalation|stealth,False
+<ACTOR> has automated collection of various information including cryptocurrency wallet details.,collection,impact,False
+<ACTOR> has been delivered to victims through spearphishing emails with malicious attachments.,execution,initial-access,False
+"<ACTOR> has been delivered within an archive, such as a ZIP file, delivered via spearphishing.",stealth,initial-access,False
+"<ACTOR> has been deployed using a launcher, which has been executed via search-order-hijacking (SoH).",execution|stealth,execution,False
+<ACTOR> has been distributed as HTA files with JScript.,execution,stealth,False
+<ACTOR> has been distributed as HTA files with VBScript.,execution,stealth,False
+<ACTOR> has been distributed through a fake CAPTCHA that presents instructions to the victim to open Windows Run window (“Windows Button + R”) and paste clipboard contents (“CTRL + V”) and press “Enter” to execute a Base64-encoded PowerShell.,execution,stealth,False
+<ACTOR> has been distributed via a malicious link that redirects to a filesharing website.,execution,initial-access,False
+<ACTOR> has been downloaded via Windows BITS functionality.,execution|persistence|stealth,command-and-control|stealth,False
+<ACTOR> has been executed through user installation of an executable disguised as a flash installer.,execution,stealth,False
+"<ACTOR> has been observed creating accounts for persistence using simple names like ""a"".",persistence,persistence|privilege-escalation,False
+"<ACTOR> has been side-loaded by the legitimate, signed executable, IsoBurner.exe.",execution|stealth,stealth,False
+<ACTOR> has been used to deploy other malware including Ninja.,command-and-control,execution,False
+"<ACTOR> has bypassed UAC by setting the Registry value ` <REGKEY> to `0`, which disabled UAC.",privilege-escalation,persistence|privilege-escalation,False
+<ACTOR> has captured credentials when a user performs login through a SSL session.,collection,collection|credential-access,False
+<ACTOR> has captured passwords by prompting victims with a “macOS needs to access System Settings” GUI window.,collection|credential-access,credential-access,False
+"<ACTOR> has checked for debugger strings by invoking `GetForegroundWindow` and looks for strings containing “x32dbg”, “x64dbg”, “windbg”, “ollydbg”, “dnspy”, “immunity debugger”, “hyperdbg”, “debug”, “debugger”, “cheat engine”, “cheatengine” and “ida”.",discovery|stealth,discovery,False
+<ACTOR> has cleared specific events that contained the threat actor’s IP address from multiple log sources.,stealth,defense-impairment|stealth,False
+"<ACTOR> has collected credentials and cryptocurrency wallets stored internally. <ACTOR> has also decrypted local file stores, such as key4.db for Firefox, to find credentials.",credential-access,collection|credential-access,False
+<ACTOR> has collected keys stored within `/Library/Keychains/login.keychain-db`.,credential-access,collection|credential-access,False
+"<ACTOR> has collected local data from a compromised host to include desktop cryptocurrency wallet data, and documents from within Desktop, Documents, and Downloads.",collection,collection|impact,False
+<ACTOR> has come signed with revoked certificates.,defense-impairment,defense-impairment|stealth,False
+"<ACTOR> has compiled a list of victims by filtering companies by revenue using Zoominfo, which is a service that provides business information.",reconnaissance,discovery|reconnaissance,False
+<ACTOR> has conducted extensive reconnaissance of victim networks including identifying network topologies.,reconnaissance,discovery|reconnaissance,False
+<ACTOR> has conducted password spraying against Outlook Web Access (OWA) infrastructure to identify valid user names and passwords.,credential-access,credential-access|discovery,False
+<ACTOR> has conducted pre-compromise reconnaissance for victim host information.,reconnaissance,discovery,False
+<ACTOR> has conducted pre-compromise web searches for victim information.,reconnaissance,collection|reconnaissance,False
+<ACTOR> has configured C2 servers to check location and user-agent strings for victim endpoints to prevent sending a payload to sandboxed environments.,discovery|stealth,stealth,False
+<ACTOR> has copied and renamed itself to DumpMediaSpotifyMusicConverter.,stealth,resource-development|stealth,False
+<ACTOR> has copied web shells between servers in targeted environments.,lateral-movement,persistence,False
+<ACTOR> has created a fake link that redirected to an adversary-controlled Dropbox that downloaded the malicious executable.,resource-development,command-and-control,False
+"<ACTOR> has created a repository named ` <ACTOR> ` under the compromised account that commits a JSON dump that contains system information, environment variables and collected secrets. <ACTOR> has also posted stolen credentials to public GitHub repositories.",exfiltration,resource-development,False
+<ACTOR> has created a scheduled task named TVInstallRestore to mimic TeamViewer.,stealth,privilege-escalation|stealth,False
+<ACTOR> has created a scheduled task named “AdobeFlashSync” to establish persistence.,stealth,execution|persistence|privilege-escalation,False
+<ACTOR> has created local user accounts to utilize in victim environments. <ACTOR> has also created administrative accounts within compromised environments.,persistence,persistence|privilege-escalation,False
+<ACTOR> has created the RegAsm.exe process in a suspended state.,persistence|privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> has created the directory `%COMMONPROGRAMFILES%\Microsoft Shared\wmi\` to contain DLLs for loading successive stages.,stealth,execution|stealth,False
+<ACTOR> has deleted all files in the Mozilla directory using the following command: `/c del /q /f /s <PATH>,impact,stealth,False
+<ACTOR> has deleted and cleared logs to avoid detection.,stealth,defense-impairment|stealth,False
+<ACTOR> has deployed malware using the victim's legitimate TLS certificate obtained from a compromised FortiGate device.,resource-development,defense-impairment|resource-development,False
+<ACTOR> has directed victims to malicious payloads staged on file sharing services.,resource-development,execution,False
+<ACTOR> has downloaded PowerShell code from the C2 server to be executed.,command-and-control,command-and-control|execution,False
+<ACTOR> has downloaded additional scripts and executed Base64 encoded commands in PowerShell.,execution,command-and-control,False
+<ACTOR> has downloaded existing packages from code repositories and extracted data stored within them.,collection,command-and-control,False
+<ACTOR> has downloaded packages from code repositories. <ACTOR> has also downloaded and executed the secrets-discovery tool TruffleHog to gather sensitive data.,command-and-control,collection,False
+<ACTOR> has dumped configuration settings in accessed IP cameras including plaintext credentials.,credential-access,credential-access|stealth,False
+<ACTOR> has elevated privileges of local user accounts by editing `/etc/sudoers` or adding a file under `/etc/sudoers.d/`.,privilege-escalation,persistence|privilege-escalation,False
+"<ACTOR> has employed layers of redundancy to maintain access to compromised environments including network devices, hypervisors, and virtual machines.",command-and-control,persistence,False
+<ACTOR> has enabled Linux containers in victim network device environments using `guestshell enable`.,execution,execution|persistence,False
+<ACTOR> has enabled traffic mirroring to exfiltrate data.,exfiltration,command-and-control|exfiltration,False
+<ACTOR> has enumerated device configuration using SNMP and gathered data stored in the Managed Information Base on target devices.,collection,discovery,False
+<ACTOR> has established remote SSH access to targeted ESXi hosts.,lateral-movement,initial-access|lateral-movement|persistence,False
+<ACTOR> has executed the Windows-native `vssadmin` command to create volume shadow copies.,stealth,execution,False
+<ACTOR> has exfiltrated data via hexadecimal-encoded subdomain fields of DNS queries.,command-and-control,exfiltration,False
+<ACTOR> has exfiltrated repository secrets to `webhook[.]site`.,exfiltration,collection|credential-access|exfiltration,False
+<ACTOR> has exoloited CVE-2023-34048 to enable command execution on vCenter servers and CVE-2023-20867 in VMware Tools to execute unauthenticated Guest Operations from ESXi hosts to guest VMs.,execution,execution|stealth,False
+<ACTOR> has exploited CVE-2024-37085 in VMWare ESXi software for authentication bypass and subsequent privilege escalation.,privilege-escalation,execution,False
+<ACTOR> has exploited ZeroLogon (CVE-2020-1472) against vulnerable domain controllers.,lateral-movement,initial-access,False
+"<ACTOR> has exploited multiple Windows vulnerabilities (CVE-2010-2743, CVE-2010-3338, CVE-2010-4398, CVE-2008-1084) and a .NET Runtime Optimization vulnerability for privilege escalation.",privilege-escalation,execution,False
+<ACTOR> has exploited zero-day vulnerabilities for initial access.,resource-development,initial-access,False
+"<ACTOR> has exploited zero-day vulnerability CVE-2023-20867 to enable execution of privileged commands across Windows, Linux, and PhotonOS (vCenter) guest VMs.",privilege-escalation,execution|initial-access,False
+<ACTOR> has gathered code repository authentication materials for NPM and GitHub. <ACTOR> has collected details pertaining to the npm configuration data for `_authToken`.,collection,credential-access|reconnaissance,False
+<ACTOR> has gathered credential and other information from multiple browsers.,credential-access,collection|credential-access,False
+"<ACTOR> has gathered credentials and data, including history, credit cards and auto-filled information, from decrypted browser files from Chrome, Firefox, Edge, Opera, Vivaldi, Waterfox and Palemoon.",credential-access,collection|credential-access,False
+"<ACTOR> has gathered sensitive data stored in the Node.JS file `process.env` to include credentials and API keys. <ACTOR> has harvested credentials stored in config files and credential files in victim environments to include `~/.aws/credentials`, `application_default_credentials.json`, and `azureProfile.json`. <ACTOR> has also targeted credentials and tokens stored in NPM files `.npmrc` and GitHub config files.",credential-access,collection|credential-access,False
+<ACTOR> has gathered victim identify information during pre-compromise reconnaissance.,reconnaissance,discovery,False
+<ACTOR> has harvested and used vCenter Server service accounts.,initial-access|persistence|privilege-escalation|stealth,collection,False
+<ACTOR> has hooked several Windows API functions to steal credentials.,collection|credential-access,credential-access,False
+<ACTOR> has identified IT staff and employees who had higher levels of administrative rights.,reconnaissance,discovery|reconnaissance,False
+<ACTOR> has identified target network security measures as part of pre-compromise reconnaissance.,reconnaissance,discovery|reconnaissance,False
+<ACTOR> has inserted a new lifecycle hook to include `postinstall`. <ACTOR> has also leveraged the NPM lifecycle hook `preinstall`.,persistence|privilege-escalation,persistence|stealth,False
+<ACTOR> has inspected server logs to remove their IPs.,stealth,defense-impairment|discovery|stealth,False
+<ACTOR> has installed a bootkit on the system to maintain persistence.,persistence|stealth,persistence|privilege-escalation,False
+"<ACTOR> has installed a malicious browser extension to target Google Chrome, Microsoft Edge, Opera and Brave browsers for the purpose of stealing data.",persistence,execution,False
+<ACTOR> has installed updates and new malware on victims.,command-and-control,defense-impairment|persistence,False
+<ACTOR> has leveraged Cisco Guest Shell to interact with a Linux Container on network devices.,execution,execution|persistence,False
+"<ACTOR> has leveraged hard-coded User Agent strings to blend in with traffic to include `Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10136`.",command-and-control,command-and-control|stealth,False
+<ACTOR> has leveraged non-standard ports to evade detection by security monitoring.,command-and-control,command-and-control|stealth,False
+<ACTOR> has leveraged two 256-byte XOR keys to encrypt and decrypt network packets using a custom algorithm.,command-and-control,command-and-control|stealth,False
+<ACTOR> has leveraged vulnerabilities in Pulse Secure VPNs to hijack sessions.,initial-access,initial-access|persistence,False
+<ACTOR> has loaded a .NET assembly into the currect execution context via `Reflection.Assembly::Load`.,stealth,privilege-escalation|stealth,False
+<ACTOR> has loaded and executed common Windows DLLs during execution.,execution,execution|stealth,False
+<ACTOR> has maliciously altered the OpenSSH binary on targeted systems to create a backdoor.,persistence,stealth,False
+<ACTOR> has manually loaded ntdll from disk in order to identity and remove API hooks set by security products.,defense-impairment,stealth,False
+<ACTOR> has modified GitHub account settings for private repositories and changed them to public.,persistence|privilege-escalation,resource-development,False
+"<ACTOR> has modified Windows Defender’s list of excluded file extensions, ensuring that .exe, .dll and .bat files are ignored during scans. <ACTOR> has loaded amsi.dll, which resolves the `AmsiScanBuffer` variable to return `E_INVALIDARG`, which may disable Windows Antimalware Scan Interface (AMSI).",defense-impairment,defense-impairment|stealth,False
+<ACTOR> has modified device configurations to create and use Generic Routing Encapsulation (GRE) tunnels.,command-and-control,command-and-control|persistence|stealth,False
+"<ACTOR> has modified the Authentication, Authorization, and Accounting (AAA) configurations forcing devices to use less secure authentication methods and to send information to their infrastructure.",credential-access|defense-impairment|persistence,defense-impairment,False
+<ACTOR> has moved laterally to the Domain Controller via RDP using a compromised account with domain administrator privileges.,lateral-movement,initial-access|lateral-movement|persistence|privilege-escalation|stealth,False
+"<ACTOR> has obfuscated data with base64, AES, RC4, and bz2.",stealth,command-and-control|stealth,False
+<ACTOR> has obfuscated target pathways with double encoding to bypass security solutions.,stealth,command-and-control|stealth,False
+<ACTOR> has published itself on compromised code repository maintainers within infected packages in attempts to propagate to other victims. <ACTOR> has also modified versions of code packages.,initial-access,execution,False
+<ACTOR> has published malicious gzip-compressed tarball (.tgz) following modification of packages within compromised accounts. <ACTOR> has also modified packages within compromised accounts.,resource-development,initial-access,False
+<ACTOR> has pushed a scheduled task via a Group Policy Object for payload execution.,defense-impairment|privilege-escalation,execution|persistence|privilege-escalation,False
+"<ACTOR> has queried system resources on the victim device to identify if it is executing in a sandbox or virtualized environments, checking usernames, conducting WMI queries for system details, checking for files commonly found in virtualized environments, searching system services, and inspecting process names. <ACTOR> has checked system GPU configurations for sandbox detection.",discovery|stealth,discovery,False
+"<ACTOR> has registered a service named `WerFaultSvc`, likely to spoof the legitimate Windows error reporting service.",stealth,defense-impairment,False
+"<ACTOR> has registered a service, typically named `WerFaultSvc`, to decrypt and find a kernel driver and kernel driver loader to maintain persistence.",persistence|privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> has removed various hooks before installing the trojan or bootkit to evade sandbox analysis or other analysis software.,discovery|stealth,stealth,False
+<ACTOR> has replaced DNS configuration from `/tmp/resolved.conf` in order to gain control of network-level control within CI environments and has flushed iptables rules using `sudo iptables -F OUTPUT` and `sudo iptables -F DOCKER-USER`.,defense-impairment,defense-impairment|stealth,False
+<ACTOR> has replaced indicators mentioned in open-source threat intelligence publications at times under a week after their release.,reconnaissance,stealth,False
+<ACTOR> has resumed the suspended process RegAsm.exe.,execution,privilege-escalation|stealth,False
+<ACTOR> has routed C2 traffic using Keyhole VNC.,lateral-movement,command-and-control,False
+<ACTOR> has scanned victim environments for open ports and services.,reconnaissance,discovery,False
+"<ACTOR> has searched browser data for cookies, history, login databases, and cryptocurrency wallets.",discovery,credential-access|discovery,False
+<ACTOR> has signed its DLL using fake certificates githab[.]com and grow[.]com. <ACTOR> has also signed its files with an expired digital certificate.,stealth,defense-impairment,False
+<ACTOR> has signed its malware with an invalid digital certificates listed as “Tencent Technology (Shenzhen) Company Limited.”,stealth,defense-impairment,False
+<ACTOR> has spread through Visual Studio extensions. <ACTOR> has also spread through JavaScript projects hosted on Github.,initial-access,execution,False
+<ACTOR> has started the SSH service by executing `sc start sshd`.,execution,persistence|privilege-escalation,False
+<ACTOR> has stolen `sitemanager.xml` and `recentservers.xml` from `%APPDATA%\FileZilla\` if present.,collection,credential-access,False
+<ACTOR> has stopped `systemd-resolved` in order to manipulate DNS and firewalls.,persistence|privilege-escalation,defense-impairment,False
+<ACTOR> has suppressed NPM warnings by silently exiting through the use of the NPM success code that has a setting that all errors exit with `code 0`.,stealth,defense-impairment|stealth,False
+<ACTOR> has suppressed victim NPM warnings using `process“exit’;` which results in having all errors exit with code 0.,defense-impairment,defense-impairment|stealth,False
+<ACTOR> has targeted network administrator browser data including browsing history and stored credentials.,credential-access,discovery,False
+<ACTOR> has the ability to check for the presence of a specific DLL and terminate if it is not found.,stealth,discovery|stealth,False
+<ACTOR> has the ability to collect system information and files of interest from compromised systems.,collection,collection|discovery,False
+<ACTOR> has the ability to control compromised endpoints via port knocking.,command-and-control|persistence|stealth,command-and-control,False
+<ACTOR> has the ability to delay execution.,stealth,discovery|stealth,False
+<ACTOR> has the ability to delete created WMI objects to evade detections.,stealth,execution|stealth,False
+<ACTOR> has the ability to deploy through an infected system's default domain policy.,defense-impairment|privilege-escalation,defense-impairment|persistence|privilege-escalation,False
+<ACTOR> has the ability to download a base64 encoded payload.,stealth,command-and-control,False
+<ACTOR> has the ability to execute Windows commands returned from C2 to gather system information.,discovery,discovery|execution,False
+<ACTOR> has the ability to load new modules directly into memory using its `Load Modules Mem` command.,stealth,privilege-escalation|stealth,False
+"<ACTOR> has the ability to move data between its kernel and user mode components, generally using named pipes.",execution,stealth,False
+<ACTOR> has the ability to overwrite its own file with random bites.,stealth,impact,False
+<ACTOR> has the ability to remove values it writes to the Registry.,stealth,defense-impairment|persistence,False
+<ACTOR> has the ability to steal credentials for cryptocurrency wallets.,impact,credential-access|impact,False
+<ACTOR> has the capability to execute gpresult.,discovery,execution,False
+<ACTOR> has the capability to execute the command net start to interact with services.,discovery,execution,False
+<ACTOR> has the capability to execute ver and systeminfo commands.,discovery,execution,False
+<ACTOR> has trojanized Fortinet firmware and replaced the legitimate `/usr/bin/tac_plus` TACACS+ daemon for Linux with a malicious version containing credential logging functionality.,persistence,defense-impairment|persistence,False
+<ACTOR> has trojanized the <sode>ssh_login and user-auth_pubkey functions to steal plaintext credentials.,credential-access|defense-impairment|persistence,credential-access,False
+<ACTOR> has used Base64-encoded PowerShell scripts to disable Microsoft Defender.,execution,stealth,False
+"<ACTOR> has used Base64-encoded data to transfer payloads and commands, including deobfuscation via certutil.",stealth,command-and-control,False
+<ACTOR> has used Diskpart to format newly-created partitions.,impact,collection,False
+"<ACTOR> has used FOFA, Shodan, and Censys to search for exposed victim infrastructure.",reconnaissance,discovery|reconnaissance,False
+<ACTOR> has used Google Firebase to download malicious installation scripts.,command-and-control,command-and-control|resource-development,False
+"<ACTOR> has used Kerberoasting PowerShell commands such as, `Invoke-Kerberoast` for credential access and to enable lateral movement.",credential-access,execution,False
+<ACTOR> has used PowerShell and BITSAdmin to retrieve follow-on payloads from external locations for execution on victim machines.,command-and-control,execution,False
+"<ACTOR> has used PsExec to distribute a second encryptor, named encryptor_1.exe, across the targeted environment.",lateral-movement,execution,False
+<ACTOR> has used Putty Secure Copy Client (PSCP) to transfer data.,lateral-movement,command-and-control,False
+<ACTOR> has used Python scripts to enumerate ESXi hosts and guest VMs.,execution,discovery|execution,False
+<ACTOR> has used Remote Desktop Protocol (RDP) and Virtual Private Networks (VPN) for initial access.,initial-access|persistence,initial-access,False
+<ACTOR> has used TightVNC to control compromised hosts.,lateral-movement,command-and-control|stealth,False
+<ACTOR> has used VPNs to connect to victim environments and enable post-exploitation actions.,initial-access|persistence,initial-access,False
+<ACTOR> has used Wevtutil to remove PowerShell execution logs.,stealth,defense-impairment,False
+<ACTOR> has used XOR-based encryption to mask C2 server locations within the trojan.,stealth,command-and-control|stealth,False
+"<ACTOR> has used `SCHTASKS /CREATE /SC DAILY /TN StartDVL /TR ""[path to self]"" /ST 10:00` to establish persistence.",execution|persistence|privilege-escalation,persistence|privilege-escalation,False
+"<ACTOR> has used `ZwQueryInformationProcess` to query process debug-related attributes, such as ProcessDebugPort and ProcessDebugFlags, and to query ProcessInstrumentationCallback (0x25) to evade analysis environments and monitoring tools.",discovery|stealth,discovery,False
+<ACTOR> has used a PowerShell script to search memory dumps for credentials.,execution,credential-access,False
+<ACTOR> has used a VNC module to monitor the victim and collect information to pivot to valuable systems on the network,lateral-movement,collection,False
+<ACTOR> has used a batch script to remove indicators of its presence on compromised hosts.,execution,stealth,False
+<ACTOR> has used a hidden directory in the ProgramData directory to store collected data.,stealth,collection|stealth,False
+<ACTOR> has used a script (atexec.py) to execute a command on a target machine via Task Scheduler.,execution|persistence|privilege-escalation,execution,False
+"<ACTOR> has used a timeout function set to `9e5` which delays execution 900,000 milliseconds or 15 minutes to avoid detection.",stealth,discovery|stealth,False
+<ACTOR> has used an email with an Excel sheet containing a malicious macro to deploy the malware,initial-access,execution,False
+<ACTOR> has used an executable that installs a modified bootloader to prevent normal boot-up.,impact,stealth,False
+<ACTOR> has used base64 encoding to hide command strings delivered from the C2.,command-and-control,stealth,False
+<ACTOR> has used compromised Paessler Router Traffic Grapher (PRTG) servers from other organizations for C2.,resource-development,command-and-control,False
+"<ACTOR> has used compromised devices and customized versions of open source tools such as FRP (Fast Reverse Proxy), Earthworm, and Impacket to proxy network traffic.",command-and-control,command-and-control|resource-development,False
+"<ACTOR> has used compromised emails, including one belonging to an Israel-based technology reseller, to deliver targeted spearphishing messages.",resource-development,initial-access,False
+<ACTOR> has used configuration files from exploited network devices to help discover upstream and downstream network segments.,reconnaissance,discovery,False
+"<ACTOR> has used csvde.exe, which is a built-in Windows command line tool, to export system information. Additionally, WsTaskLoad has gathered system information, such as operating system and hostname.",discovery,discovery|execution,False
+<ACTOR> has used custom tooling including JumbledPath.,resource-development,execution,False
+"<ACTOR> has used exploits for vulnerabilities such as MS17-010, also known as `Eternal Blue`, during operations.",lateral-movement,execution,False
+<ACTOR> has used fake CAPTCHAs to deliver and execute itself to victims.,execution,stealth,False
+<ACTOR> has used key loggers to steal usernames and passwords.,collection|credential-access,credential-access,False
+<ACTOR> has used legitimate network and forensic tools and customized versions of open-source tools for C2.,resource-development,command-and-control|resource-development,False
+<ACTOR> has used logged into accounts on Cisco devices by cracking weak hashed passwords from configuration files.,initial-access|persistence|privilege-escalation|stealth,credential-access|persistence,False
+<ACTOR> has used malicious USBs to emulate keystrokes to launch PowerShell to download and execute malware from the adversary's server.,execution,collection|credential-access,False
+<ACTOR> has used multiple tools for discovery and defense evasion purposes on compromised hosts.,resource-development,discovery,False
+"<ACTOR> has used native tools and processes including living off the land binaries or “LOLBins"" to maintain and expand access to the victim networks.",stealth,initial-access|lateral-movement,False
+<ACTOR> has used publicly available exploit code for initial access.,resource-development,initial-access|resource-development,False
+<ACTOR> has used stolen certificates to sign its tools including those from Whizzimo LLC.,defense-impairment,defense-impairment|resource-development,False
+<ACTOR> has used strategic website compromise to deliver a malicious link requiring user interaction.,execution,initial-access,False
+<ACTOR> has used the Csvde tool to collect Active Directory files and data.,collection,collection|discovery,False
+<ACTOR> has used the Hugging Face API to query the Qwen2.5-Coder-32B-Instruct LLM to generate one-line Windows commands for the collection of system information and documents in specific folders on compromised hosts. <ACTOR> subsequently executed the returned commands and exfiltrated the collected files and information to adversary-controlled C2 servers.,command-and-control,exfiltration,False
+<ACTOR> has used the Microsoft administration tool csvde.exe to export Active Directory data.,discovery,collection,False
+<ACTOR> has used the NtQueryDirectoryFile and ZwQueryDirectoryFile functions to hide files and directories.,execution,stealth,False
+"<ACTOR> has used the PowerShell script 3CF9.ps1 and the executable WsTaskLoad to enumerate domain administrations by executing `net group “Domain Admins” /domain`. <ACTOR> has also used csvde.exe, which is a built-in Windows command line tool, to export Active Directory information.",discovery,discovery|execution,False
+<ACTOR> has used the PowerShell script 3CF9.ps1 to execute `net time`.,discovery,execution,False
+"<ACTOR> has used the PowerShell script 3CF9.ps1 to perform process discovery by executing `tasklist /v`. Additionally, WsTaskLoad.exe executes `tasklist /v` to perform process discovery.",discovery,discovery|execution,False
+<ACTOR> has used the Reflective DLL injection module from Github to inject itself into a process’s memory.,stealth,privilege-escalation|stealth,False
+<ACTOR> has used the TABLEFLIP traffic redirection utility to listen for specialized command packets on compromised FortiManager devices.,command-and-control|persistence|stealth,command-and-control,False
+<ACTOR> has used the `RtlIpv4StringToAddressA` to convert IP-formatted string to a byte array.,execution,stealth,False
+<ACTOR> has used the `Sleep` API before C2 communication.,discovery|stealth,command-and-control|execution,False
+"<ACTOR> has used the esxcli command line utility to modify firewall rules, install malware, and for artifact removal.",execution,defense-impairment,False
+<ACTOR> has used the publicly available rootkits REPTILE and MEDUSA on targeted VMs.,stealth,resource-development,False
+<ACTOR> has used tools such as Adminer during intrusions.,resource-development,lateral-movement,False
+<ACTOR> has used tools to exploit the ZeroLogon vulnerability (CVE-2020-1472).,lateral-movement,initial-access|lateral-movement,False
+<ACTOR> has used tools to remove log files on targeted systems.,defense-impairment,stealth,False
+<ACTOR> has used utilized look-alike domains and graphics of trusted security solution providers to entice victims to click on phishing links.,stealth,resource-development,False
+<ACTOR> has used vSphere Installation Bundles (VIBs) that contained modified descriptor XML files with the `acceptance-level` set to `partner` which allowed for privilege escalation.,privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> has used vSphere Installation Bundles (VIBs) to install malware and establish persistence across ESXi hypervisors.,persistence,persistence|privilege-escalation,False
+<ACTOR> has used various open-source tools for privilege escalation purposes.,resource-development,execution,False
+<ACTOR> has used weak credentials to gain access to victim devices.,credential-access,initial-access|persistence|privilege-escalation|stealth,False
+"<ACTOR> has used webshells, including ones named AuditReport.jspx and iisstart.aspx, in compromised environments.",persistence,stealth,False
+<ACTOR> has used zero-day vulnerabilities CVE-2022-41328 against FortiOS and CVE-2023-20867 and CVE-2023-34048 against VMware vCenter.,resource-development,initial-access,False
+<ACTOR> has utilized AppleScript to include `set keychainPassword to do shell script` to execute shell command that retrieves passwords from the macOS keychain.,execution,credential-access|execution,False
+<ACTOR> has utilized SNMP daemon to execute commands to include SNMPwalk.,execution,execution|persistence|privilege-escalation,False
+<ACTOR> has utilized double encoding with hexadecimals in attempts to obfuscate requested command paths.,command-and-control,stealth,False
+<ACTOR> has utilized double-base64 encoding to store stolen secrets within the Github Action Logs within the victim account. <ACTOR> has also leveraged three layers of base64 encoding of exfiltrated data for anti-forensic purposes.,stealth,command-and-control,False
+<ACTOR> has utilized logic to avoid executing on Russian based devices.,stealth,execution|stealth,False
+<ACTOR> has utilized the windows API call `GetLocalTime()` to retrieve a SystemTime structure to generate a seed value.,discovery,execution,False
+<ACTOR> has utilized virtual private servers and compromised routers as proxies for malicious communications.,command-and-control,resource-development,False
+<ACTOR> has utilzed Python scripts to transfer files between ESXi hosts and guest VMs.,lateral-movement,execution,False
+<ACTOR> has waited for six seconds using the command `timeout /t 6`.,stealth,discovery,False
+<ACTOR> hijacked FQDNs associated with legitimate websites hosted by hop points.,resource-development,command-and-control|resource-development,False
+<ACTOR> includes a module capable of stealing content from the Tencent QQ database storing user QQ message history on infected devices.,collection,collection|credential-access,False
+<ACTOR> includes modules capable of gathering information from USB thumb drives and CD-ROMs on the victim machine given a list of provided criteria.,collection,collection|discovery,False
+<ACTOR> includes modules for dumping and capturing credentials from process memory.,credential-access,collection|credential-access,False
+<ACTOR> includes modules for stealing stored credentials from Outlook and Foxmail email client software.,credential-access,collection|credential-access,False
+"<ACTOR> includes one infection vector that leverages a malicious ""KeyScramblerE.DLL"" library that will load during the execution of the legitimate KeyScrambler application.",execution|stealth,credential-access|execution,False
+<ACTOR> initial infection mechanisms include masquerading as pirated media that launches malicious VBScript on the victim.,execution,stealth,False
+<ACTOR> initial infection payloads can masquerade as pirated media content requiring user interaction for code execution. <ACTOR> is distributed through phishing links to VBS or MSI objects requiring user interaction for execution.,execution,stealth,False
+<ACTOR> is capable of configuring itself as a service.,persistence|privilege-escalation,privilege-escalation|stealth,False
+<ACTOR> is capable of launching a remote shell on the host to delete itself.,stealth,execution,False
+<ACTOR> is delivered via a malicious Word document inside a zip file.,initial-access,stealth,False
+<ACTOR> is distributed as an obfuscated JavaScript launcher file.,stealth,execution|stealth,False
+<ACTOR> is linked to the defacement of several Ukrainian organization websites.,impact,initial-access,False
+<ACTOR> is only delivered to a compromised host if the victim's IP address is on an allow-list.,stealth,discovery|stealth,False
+"<ACTOR> loader only executes the payload after the left mouse button has been pressed at least three times, in order to avoid being executed within virtualized or emulated environments.",discovery|stealth,stealth,False
+<ACTOR> logs key strokes for configured processes and sends them back to the C2 server.,collection|credential-access,defense-impairment,False
+"<ACTOR> looks for various security products by process name using hard-coded values in the malware. <ACTOR> will not execute its keylogging thread if a process name associated with Trend Micro anti-virus is identified, or if runtime checks identify the presence of Kaspersky anti-virus. <ACTOR> will initiate a new thread if certain security products are identified on the victim, and recreate any malicious files associated with it if it determines they were removed by security software in a new system location.",discovery,stealth,False
+<ACTOR> maintained persistence on FortiGate Firewalls through ICMP port knocking.,command-and-control|persistence|stealth,defense-impairment,False
+<ACTOR> makes modifications to open-source scripts from GitHub and executes them on the victim’s machine.,execution,persistence,False
+<ACTOR> modified DNS records at service providers to redirect traffic from legitimate resources to <ACTOR> -controlled servers to enable adversary-in-the-middle attacks for credential capture.,collection|credential-access,defense-impairment,False
+<ACTOR> modified Name Server (NS) items to refer to <ACTOR> -controlled DNS servers to provide responses for all DNS lookups.,resource-development,command-and-control,False
+<ACTOR> modified multiple services on victim machines to enable encryption operations. <ACTOR> has installed tools such as AnyDesk as a service on victim machines.,persistence|privilege-escalation,persistence,False
+<ACTOR> modified the ld.so preload file in Linux environments to enable persistence for Winnti malware.,execution|stealth,persistence|privilege-escalation,False
+<ACTOR> modified the startup file `/etc/init.d/localnet` to execute the line `nohup /bin/support &` so the script would run when the system was rebooted.,stealth,persistence|privilege-escalation,False
+<ACTOR> modifies the time of a file as specified by the control server.,stealth,discovery|stealth,False
+<ACTOR> obtains Windows logon password details.,credential-access,credential-access|discovery,False
+"<ACTOR> overrides the %windir% environment variable by setting a Registry key, HKEY_CURRENT_User\Environment\windir, to an alternate command to execute a malicious AutoIt script. This allows <ACTOR> to run every time the scheduled task DiskCleanup is executed as this uses the path value %windir%\system32\cleanmgr.exe for execution.",execution|stealth,defense-impairment|persistence|privilege-escalation,False
+<ACTOR> performs timing checks using the Read-Time Stamp Counter (RDTSC) instruction on the victim CPU.,discovery|stealth,discovery,False
+<ACTOR> queries system resources on an infected machine to identify if it is executing in a sandbox or virtualized environment.,discovery|stealth,discovery,False
+<ACTOR> recursively generates a list of files within a directory and sends them back to the control server.,collection,discovery,False
+<ACTOR> reflectively loads a Windows PE file into a process.,stealth,privilege-escalation|stealth,False
+"<ACTOR> relies on parent PID spoofing as part of its ""rootkit-like"" functionality to evade detection via Task Manager or Process Explorer.",privilege-escalation|stealth,stealth,False
+<ACTOR> retrieves follow-on payloads direct from adversary-owned infrastructure for deployment on compromised hosts.,lateral-movement,command-and-control,False
+<ACTOR> saves information from its keylogging routine as a .zip file in the present working directory.,collection,collection|credential-access,False
+<ACTOR> searches for stored credentials associated with cryptocurrency wallets and notifies the command and control server when identified.,collection,impact,False
+<ACTOR> spreads itself laterally by writing the JavaScript launcher file to mapped shared folders.,lateral-movement,execution|lateral-movement,False
+<ACTOR> stopped execution if identified language settings on victim machines was Russian or one of several language associated with former Soviet republics. <ACTOR> has used ransomware variants requiring a key passed on the command line for the malware to execute.,stealth,impact,False
+<ACTOR> supports custom chunk sizes used to upload/download files.,exfiltration,command-and-control,False
+<ACTOR> supports scripting of file downloads from agents.,collection,execution,False
+<ACTOR> terminates anti-malware processes if they’re found running on the system.,defense-impairment,defense-impairment|stealth,False
+<ACTOR> transfered tools such as Cobalt Strike and the AnyDesk remote access tool during operations using SMB shares.,lateral-movement,command-and-control|lateral-movement,False
+<ACTOR> transmitted collected victim host information via HTTP POST to command and control infrastructure.,exfiltration,command-and-control|exfiltration,False
+"<ACTOR> tries to elevate privileges to SYSTEM using PsExec to locally execute as a service, such as cmd /c <PATH> -accepteula -j -d -s [Target Binary].",execution,execution|privilege-escalation,False
+<ACTOR> unset the Bash and MySQL history files on victim systems.,defense-impairment,stealth,False
+<ACTOR> uploads files and secondary payloads to the victim's machine.,command-and-control,command-and-control|exfiltration,False
+<ACTOR> used COM to setup scheduled task for persistence.,execution,execution|persistence|privilege-escalation,False
+<ACTOR> used DLL side-loading to covertly load PoisonIvy into memory on the victim machine.,execution|stealth,stealth,False
+"<ACTOR> used Reg to dump the Security Account Manager (SAM), System, and Security Windows registry hives from victim machines.",discovery,credential-access,False
+<ACTOR> used `vmtoolsd.exe` to run commands on guest virtual machines from a compromised ESXi host.,execution,execution|stealth,False
+<ACTOR> used a batch script to perform a series of discovery techniques and saves it to a text file.,collection,execution,False
+"<ACTOR> used a registry edit to enable a Windows feature called RestrictedAdmin in victim environments. This change allowed <ACTOR> to leverage ""pass the hash"" mechanisms as the alteration allows for RDP connections with a valid account name and hash only, without possessing a cleartext password value.",lateral-movement,defense-impairment|persistence|privilege-escalation,False
+<ACTOR> used a renamed cmd.exe file to evade detection.,stealth,execution|stealth,False
+<ACTOR> used an XSL file to run VBScript code.,stealth,execution,False
+<ACTOR> used images embedded into document lures that only activate the payload when a user double clicks to avoid sandboxes.,discovery|stealth,stealth,False
+<ACTOR> used remote scheduled tasks to install malicious software on victim systems during lateral movement actions.,lateral-movement,execution|persistence|privilege-escalation,False
+<ACTOR> used the tool Adminer to remotely logon to the MySQL service of victim machines.,collection,lateral-movement,False
+"<ACTOR> uses AutoIt scripts dropped to a hidden directory during initial installation phases, such as `test.au3`.",execution,stealth,False
+<ACTOR> uses NirSoft tools to steal user credentials from the infected machine. NirSoft tools are executed via process hollowing in a newly-created instance of vbc.exe or regasm.exe.,credential-access,credential-access|privilege-escalation,False
+<ACTOR> uses PowerShell loops to iteratively check for available commands in its OneDrive C2 server.,execution,discovery,False
+<ACTOR> uses PowerSploit to inject shellcode into PowerShell.,execution,privilege-escalation|stealth,False
+<ACTOR> uses WMI queries to gather various information about the victim machine and operating system.,discovery,execution,False
+<ACTOR> uses WMI to perform process monitoring.,execution,discovery|execution,False
+<ACTOR> uses WMIC to identify anti-virus products installed on the victim’s machine and to obtain firewall details.,execution,discovery,False
+<ACTOR> uses ZLIB Compression to compresses data sent to the C2 server in the `payload` section network communication packet.,command-and-control,collection,False
+"<ACTOR> uses a subdomain on the legitimate Cloudflare resource ""trycloudflare[.]com"" to obfuscate the threat actor's actual address and to tunnel information sent from victim systems.",command-and-control,command-and-control|stealth,False
+<ACTOR> uses mapped shared folders to transfer ransomware payloads via SMB.,lateral-movement,command-and-control|lateral-movement,False
+"<ACTOR> uses per-victim links for hosting malicious archives, such as ZIP files, in services such as SharePoint to prevent other entities from retrieving them.",stealth,initial-access,False
+<ACTOR> uses steganography to send images to users that are embedded with shellcode.,stealth,collection|command-and-control,False
+<ACTOR> uses the `SetThreadExecutionState` API to prevent the victim system from entering sleep.,execution,discovery|stealth,False
+"<ACTOR> uses the `mountvol.exe` command to mount volume names and leverages the Microsoft Discretionary Access Control List tool, `icacls.exe`, to grant the group to “Everyone” full access to the root of the drive.",defense-impairment,discovery,False
+"<ACTOR> uses the mktemp utility to make unique file and directory names for payloads, such as TMP_DIR=`mktemp -d -t x.",stealth,discovery|stealth,False
+"<ACTOR> uses the native Windows API CallWindowProc() to decode and launch encoded shellcode payloads during execution. <ACTOR> can call kernel mode functions directly to hide the use of process hollowing methods during execution. <ACTOR> has also used the `CreateToolhelp32Snapshot`, `GetFileAttributesA` and `CreateProcessA` functions to obtain a list of running processes, to check for security products and to execute its malware.",execution,stealth,False
+<ACTOR> uses two distinct User Account Control (UAC) bypass techniques to escalate privileges.,privilege-escalation,persistence|privilege-escalation,False
+"<ACTOR> uses two utilities, GETMAIL and MAPIGET, to steal email. MAPIGET steals email still on Exchange servers that has not yet been archived.",collection,collection|credential-access,False
+"<ACTOR> uses valid network credentials gathered through credential harvesting to move laterally within victim networks, often employing the Impacket framework to do so.",lateral-movement,initial-access|persistence|privilege-escalation|stealth,False
+<ACTOR> uses vncDll module to remote control the victim machine.,command-and-control,command-and-control|stealth,False
+<ACTOR> uses web injects and browser redirection to trick the user into providing their login credentials on a fake or modified web page.,collection,collection|credential-access,False
+<ACTOR> utilizes victim machine operating system information to create custom User Agent strings for subsequent command and control communication.,discovery,execution,False
+<ACTOR> will configure a crontab for process execution to start the backdoor on reboot if it is not initially running under group 0 privileges.,execution|persistence|privilege-escalation,persistence|privilege-escalation|stealth,False
+<ACTOR> will not execute on hosts where the system language is set to a language spoken in the Commonwealth of Independent States region.,stealth,discovery|stealth,False
+<ACTOR> will search for cryptocurrency wallets by examining application window names for specific strings. <ACTOR> extracts information collected via NirSoft tools from the hosting process's memory by first identifying the window through the FindWindow API function.,discovery,impact,False
+<ACTOR> will spawn a thread on execution to capture all keyboard events and write them to a predefined log file.,collection|credential-access,collection,False
+<ACTOR> ’s JavaScript file used a legitimate Microsoft Office 2007 package to side-load the OINFO12.OCX dynamic link library.,execution|stealth,execution,False
+<ACTOR> ’s infpub.dat file uses NTLM login credentials to brute force Windows machines.,credential-access,credential-access|persistence,False
+A variant of <ACTOR> executes dir <PATH> when initially run.,discovery,execution,False
+"Depending on the Linux distribution, <ACTOR> executes a set of commands to collect device information and sends the collected information to the C2 server.",collection,discovery,False
+"During <ACTOR> , APT41 copied the local `SAM` and `SYSTEM` Registry hives to a staging directory.",collection,collection|credential-access,False
+"During <ACTOR> , APT41 deployed JScript web shells through the creation of malicious ViewState objects.",persistence,execution,False
+"During <ACTOR> , APT41 established persistence by loading malicious libraries via modifications to the Import Address Table (IAT) within legitimate Microsoft binaries.",execution|stealth,persistence|privilege-escalation,False
+"During <ACTOR> , APT41 frequently configured the URL endpoints of their stealthy passive backdoor LOWKEY.PASSIVE to masquerade as normal web application traffic on an infected server.",command-and-control,command-and-control|stealth,False
+"During <ACTOR> , APT41 hex-encoded PII data prior to exfiltration.",collection,collection|command-and-control,False
+"During <ACTOR> , APT41 ran `wget <URL> to download malicious payloads.",command-and-control,execution,False
+"During <ACTOR> , APT41 used `SCHTASKS /Change` to modify legitimate scheduled tasks to run malicious code.",stealth,execution|persistence|privilege-escalation,False
+"During <ACTOR> , APT41 used `cmd.exe /c ping %userdomain%` for discovery.",discovery,execution,False
+"During <ACTOR> , APT41 used a ConfuserEx obfuscated BADPOTATO exploit to abuse named-pipe impersonation for local `NT AUTHORITY\SYSTEM` privilege escalation.",privilege-escalation|stealth,stealth,False
+"During <ACTOR> , APT41 used dead drop resolvers on two separate tech community forums for their KEYPLUG Windows-version backdoor; notably APT41 updated the community forum posts frequently with new dead drop resolvers during the campaign.",command-and-control,command-and-control|resource-development,False
+"During <ACTOR> , Lazarus Group conducted internal spearphishing from within a compromised organization.",lateral-movement,initial-access|lateral-movement,False
+"During <ACTOR> , Lazarus Group deployed malware designed not to run on computers set to Korean, Japanese, or Chinese in Windows language preferences.",discovery,execution,False
+"During <ACTOR> , Lazarus Group digitally signed their malware and the dbxcli utility.",resource-development,defense-impairment,False
+"During <ACTOR> , Lazarus Group executed malware with ` <PATH> "" <PATH> , `CtrlPanel S-6-81-3811-75432205-060098-6872 0 0 905`.",stealth,execution,False
+"During <ACTOR> , Lazarus Group launched malicious DLL files, created new folders, and renamed folders with the use of the Windows command shell.",execution,execution|stealth,False
+"During <ACTOR> , Lazarus Group lured users into executing a malicious link to disclose private account information or provide initial access.",execution,initial-access,False
+"During <ACTOR> , Lazarus Group targeted Windows servers running Internet Information Systems (IIS) to install C2 components.",persistence,command-and-control,False
+"During <ACTOR> , Lazarus Group used DOCX files to retrieve a malicious document template/DOTM file.",stealth,discovery,False
+"During <ACTOR> , Lazarus Group used a custom build of open-source command-line dbxcli to exfiltrate stolen data to Dropbox.",exfiltration,command-and-control|exfiltration,False
+"During <ACTOR> , Lazarus Group used a remote XSL script to download a Base64-encoded DLL custom downloader.",stealth,command-and-control,False
+"During <ACTOR> , Lazarus Group used code signing certificates issued by Sectigo RSA for some of its malware and tools.",resource-development,defense-impairment|resource-development,False
+"During <ACTOR> , Lazarus Group used tools that collected `GetTickCount` and `GetSystemTimeAsFileTime` data to detect sandbox or VMware services.",discovery|stealth,discovery,False
+"During <ACTOR> , Lazarus Group used tools that conducted a variety of system checks to detect sandboxes or VMware services.",discovery|stealth,discovery,False
+"During <ACTOR> , Lazarus Group used tools that used the `IsDebuggerPresent` call to detect debuggers.",discovery|stealth,discovery,False
+"During <ACTOR> , the threat actors enabled WinRM over HTTP/HTTPS as a backup persistence mechanism using the following command: `cscript //nologo "" <PATH> set winrm/config/service@{EnableCompatibilityHttpsListener=""true""}`.",initial-access|persistence,command-and-control,False
+"During <ACTOR> , the threat actors executed an encoded VBScript file using `wscript` and wrote the decoded output to a text file.",execution,execution|stealth,False
+"During <ACTOR> , the threat actors executed an encoded VBScript file.",stealth,execution,False
+"During <ACTOR> , the threat actors named a malicious scheduled task ""WinUpdate"" for persistence.",stealth,persistence|privilege-escalation|stealth,False
+"During <ACTOR> , the threat actors ran a command script to set up persistence as a scheduled task named ""WinUpdate"", as well as other encoded commands from the command-line",execution,execution|persistence|privilege-escalation,False
+"During <ACTOR> , the threat actors stroed payloads in Windows CLFS (Common Log File System) transactional logs.",stealth,defense-impairment,False
+"During <ACTOR> , the threat actors used Empire to automatically gather the username, domain name, machine name, and other system information.",collection,collection|discovery,False
+"During <ACTOR> , the threat actors used Empire to gather various local system information.",collection,discovery,False
+"During <ACTOR> , the threat actors used MSbuild to execute an actor-created file.",execution|stealth,stealth,False
+"During <ACTOR> , the threat actors used WMI queries to check if various security applications were running as well as to determine the operating system version.",execution,discovery,False
+"During <ACTOR> , the threat actors used WMI queries to determine if analysis tools were running on a compromised system.",discovery,discovery|execution,False
+"During <ACTOR> , the threat actors used a script that ran WMI queries to check if a VM or sandbox was running, including VMWare and Virtualbox. The script would also call WMI to determine the number of cores allocated to the system; if less than two the script would stop execution.",discovery|stealth,discovery|execution,False
+"During <ACTOR> , the threat actors used batch scripts to perform reconnaissance.",execution,discovery|execution,False
+"During <ACTOR> , the threat actors used the legitimate Windows services `IKEEXT` and `PrintNotify` to side-load malicious DLLs.",execution|stealth,execution,False
+"During <ACTOR> , the threat actors used trojanized documents that retrieved remote templates from an adversary-controlled website.",stealth,collection,False
+"During <ACTOR> , threat actors added the `ApplicationImpersonation` management role to accounts under their control to impersonate users and take ownership of targeted mailboxes.",persistence|privilege-escalation,persistence|privilege-escalation|stealth,False
+"During <ACTOR> , threat actors deleted Windows events and application logs.",defense-impairment,defense-impairment|stealth,False
+"During <ACTOR> , threat actors initiated a process named Mellona.exe to spread the ROADSWEEP file encryptor and a persistence script to a list of internal machines.",lateral-movement,privilege-escalation,False
+"During <ACTOR> , threat actors made multiple HTTP POST requests to the Exchange servers of the victim organization to transfer data.",collection,command-and-control,False
+"During <ACTOR> , threat actors used HTTP to transfer data from compromised Exchange servers.",exfiltration,command-and-control,False
+"During <ACTOR> , threat actors used WMI to modify Windows Defender settings.",execution,defense-impairment|persistence,False
+"During <ACTOR> , threat actors used a compromised Exchange account to search mailboxes and create new Exchange accounts.",initial-access|persistence|privilege-escalation|stealth,resource-development,False
+"During <ACTOR> , threat actors used compromised Exchange accounts to search mailboxes for administrator accounts.",discovery,resource-development,False
+"During <ACTOR> , threat actors used tools with legitimate code signing certificates.",resource-development,defense-impairment|resource-development,False
+"During the <ACTOR> , APT29 accessed victims' internal knowledge repositories (wikis) to view sensitive corporate information on products, services, and internal business operations.",collection,reconnaissance,False
+"During the <ACTOR> , APT29 added credentials to OAuth Applications and Service Principals.",persistence|privilege-escalation,initial-access|persistence|privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 added their own devices as allowed IDs for active sync using `Set-CASMailbox`, allowing it to obtain copies of victim mailboxes. It also added additional permissions (such as Mail.Read and Mail.ReadWrite) to compromised Application or Service Principals.",persistence|privilege-escalation,credential-access,False
+"During the <ACTOR> , APT29 bypassed MFA set on OWA accounts by generating a cookie value from a previously stolen secret key.",credential-access,persistence|privilege-escalation,False
+"During the <ACTOR> , APT29 changed domain federation trust settings using Azure AD administrative permissions to configure the domain to accept authorization tokens signed by their own SAML signing certificate.",defense-impairment|privilege-escalation,defense-impairment,False
+"During the <ACTOR> , APT29 created tokens using compromised SAML signing certificates.",credential-access,resource-development,False
+"During the <ACTOR> , APT29 downloaded source code from code repositories.",collection,command-and-control,False
+"During the <ACTOR> , APT29 gained access through compromised accounts at cloud solution partners, and used compromised certificates issued by Mimecast to authenticate to Mimecast customer systems.",initial-access,initial-access|persistence|privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 registered devices in order to enable mailbox syncing via the `Set-CASMailbox` command.",persistence|privilege-escalation,resource-development,False
+"During the <ACTOR> , APT29 set the hostnames of their C2 infrastructure to match legitimate hostnames in the victim environment. They also used IP addresses originating from the same country as the victim for their VPN infrastructure.",command-and-control,stealth,False
+"During the <ACTOR> , APT29 used WinRM via PowerShell to execute commands and payloads on remote hosts.",lateral-movement,execution,False
+"During the <ACTOR> , APT29 used `fsutil` to check available free space before executing actions that might create large files on disk.",discovery,discovery|stealth,False
+"During the <ACTOR> , APT29 used a WMI event filter to invoke a command-line event consumer at system boot time to launch a backdoor with `rundll32.exe`.",persistence|privilege-escalation,stealth,False
+"During the <ACTOR> , APT29 used account credentials they obtained to attempt access to Group Managed Service Account (gMSA) passwords.",credential-access,initial-access|persistence|privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 used administrative accounts to connect over SMB to targeted users.",lateral-movement,initial-access|persistence|privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 used compromised service principals to make changes to the Office 365 environment.",lateral-movement,initial-access|persistence|privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 used different compromised credentials for remote access and to move laterally.",initial-access|persistence|privilege-escalation|stealth,initial-access|lateral-movement|persistence|privilege-escalation,False
+"During the <ACTOR> , APT29 used dynamic DNS resolution to construct and resolve to randomly-generated subdomains for C2.",command-and-control,command-and-control|resource-development,False
+"During the <ACTOR> , APT29 used forged SAML tokens that allowed the actors to impersonate users and bypass MFA, enabling APT29 to access enterprise cloud applications and services.",lateral-movement,privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 used privileged accounts to replicate directory service data with domain controllers.",credential-access,initial-access|persistence|privilege-escalation|stealth,False
+"During the <ACTOR> , APT29 used stolen cookies to access cloud resources and a forged `duo-sid` cookie to bypass MFA set on an email account.",lateral-movement,persistence|privilege-escalation,False
+"During the <ACTOR> , APT29 used the `Get-ManagementRoleAssignment` PowerShell cmdlet to enumerate Exchange management role assignments through an Exchange Management Shell.",discovery,discovery|execution,False
+"During the <ACTOR> , the adversaries attempted to reuse password hash values to gain access to other systems.",lateral-movement,credential-access,False
+"During the <ACTOR> , the adversaries copied volume shadow copies through executing `vssadmin` in order to dump the `NTDS.dit` file.",stealth,credential-access,False
+"During the <ACTOR> , the adversaries gathered and used the FortiGate bookmarks defined in the configuration file to include the statically defined credentials that facilitated RDP connections to jump hosts.",collection,credential-access,False
+"During the <ACTOR> , the adversaries had leveraged Group Policy Objects to distribute wiper malware to victim devices through a network share.",defense-impairment|privilege-escalation,lateral-movement,False
+"During the <ACTOR> , the adversaries leveraged stolen credentials within cloud services to download targeted data from SharePoint, and Teams.",collection,lateral-movement,False
+"During the <ACTOR> , the adversaries modified two-factor settings within the FortiGate solution to `unset`.",credential-access|defense-impairment|persistence,defense-impairment,False
+"During the <ACTOR> , the adversaries observed that their malware was initially detected by the victims EDR solutions, so they modified the payload and attempted to execute the new version within the same day.",resource-development,discovery|stealth,False
+"During the <ACTOR> , the adversaries used compromised Cisco routers for network communications.",resource-development,command-and-control|resource-development,False
+"During the <ACTOR> , the adversaries utilized the Linux `dd` command to overwrite portions of the disks with random data.",execution,impact,False
+"During the <ACTOR> , the adversary also forged digital signatures of tax documents using a combination of 96 byte padded SHA-256 hash and base64-encoding resemble a legitimately signed PDF file.",stealth,defense-impairment,False
+"During the <ACTOR> , the adversary also requested Claude Code to enumerate and collect database schemas, tables containing personal data (names, addresses, phone numbers, FIEL records, etc.), stored procedures, links to additional databases, and database password hashes from victim environments. During the <ACTOR> , the adversary tasked Claude Code with extracting credentials from a database.",collection,credential-access,False
+"During the <ACTOR> , the adversary had Claude Code discover and utilize pre-established stored procedures to query the victim database.",persistence,collection,False
+"During the <ACTOR> , the adversary had instructed Claude Code to utilize vulnerability tools to include PetitPotam which Claude Code sought to download to utilize in the victim environment.",command-and-control,initial-access,False
+"During the <ACTOR> , the adversary identified and connected to victim AWS databases and systems through the use of client tools.",discovery,reconnaissance,False
+"During the <ACTOR> , the adversary tasked Claude Code to collect information about the victim environments including diagrams, database tables, authentication flow, and configuration files with credentials.",reconnaissance,credential-access,False
+"During the <ACTOR> , the adversary tasked Claude Code to connect to the victim environments using compromised local accounts to include root and service accounts.",initial-access|persistence|privilege-escalation|stealth,initial-access|persistence,False
+"During the <ACTOR> , the adversary tasked Claude Code to create a reverse shell callback on an Amazon Web Services hosted system.",execution,persistence,False
+"During the <ACTOR> , the adversary tasked Claude Code to escalate privileges by modifying a crontab script to inject an SSH key into root’s `authorized_keys` file and then restore the file modification time, so the crontab script appeared unchanged.",execution|persistence|privilege-escalation,privilege-escalation|stealth,False
+"During the <ACTOR> , the adversary tasked Claude Code to identify SSH connections, make attempts to move laterally within the victim environment, and communicate through SSH tunnels.",lateral-movement,discovery,False
+"During the <ACTOR> , the adversary tasked Claude Code to use `ntlmrelay.py` to execute a base64-encoded PowerShell payload on five domain controllers. During the <ACTOR> , the adversary utilized base64-encoded PowerShell payloads against victim servers.",execution,execution|stealth,False
+"During the <ACTOR> , the adversary tasked Claude Code with attempting to connect to other systems via FTP.",lateral-movement,command-and-control,False
+"During the <ACTOR> , the adversary tasked Claude Code with attempting to exploit the EternalBlue vulnerability.",lateral-movement,execution,False
+"During the <ACTOR> , the adversary tasked Claude Code with attempting to use PetitPotam and Printerbug as NTLM relay attacks.",credential-access,command-and-control,False
+"During the <ACTOR> , the adversary tasked Claude Code with generating and executing rootkits.",stealth,execution,False
+"During the <ACTOR> , the adversary tasked Claude Code with planting a webshell on SADM’s public-facing portal .",persistence,resource-development,False
+"During the <ACTOR> , the adversary used Anthropic’s Claude Code and OpenAI’s GPT-4.1 AI to conduct operations.",reconnaissance,resource-development,False
+"During the <ACTOR> , the adversary used Claude Code to create exploit scripts.",resource-development,execution,False
+"During the <ACTOR> , the adversary utilized Claude Code to gather data within bash histories.",credential-access,collection,False
+"During the <ACTOR> , the adversary utilized Claude Code to maintain access to the victim’s internal network through proxy tunnels. During the <ACTOR> , the adversary tasked Claude Code to connect to the internal victim devices through SSH tunnels.",command-and-control,command-and-control|persistence,False
+"During the <ACTOR> , the adversary utilized Cloud APIs for interacting with victim environments and exfiltrating data to include OpenAI’s GPT-4.1 API, and AWS API.",execution,command-and-control,False
+"During the <ACTOR> , the adversary utilized the legitimate residential proxy provider proxy[.]geonode[.]io for C2 communications.",resource-development,command-and-control,False
+"For <ACTOR> , threat actors used .aspx webshells named pickers.aspx, error4.aspx, and ClientBin.aspx, to maintain persistence.",persistence,persistence|stealth,False
+"For the <ACTOR> , APT29 compromised domains to use for C2.",resource-development,command-and-control|resource-development,False
+"For the <ACTOR> , APT29 conducted credential theft operations to obtain credentials to be used for access to victim environments.",reconnaissance,credential-access|reconnaissance,False
+"For the <ACTOR> , APT29 used compromised identities to access networks via SSH, VPNs, and other remote access tools.",initial-access|persistence,initial-access|persistence|privilege-escalation|stealth,False
+"If installing itself as a service fails, <ACTOR> instead writes itself as a file named svchost.exe saved in %APPDATA%\Microsoft\Network.",stealth,privilege-escalation|stealth,False
+The <ACTOR> AshenOrchestrator component has process management functionality.,discovery,execution|persistence,False
+The <ACTOR> `Set-AADIntUserMFA` command can be used to disable MFA for a specified user.,credential-access|defense-impairment|persistence,defense-impairment,False
+The <ACTOR> launcher can daemonize a process.,persistence|privilege-escalation,privilege-escalation|stealth,False
+The <ACTOR> loader and AshenOrchestrator components can collect reconnaissance data from victim machines.,discovery,collection|discovery,False
+The <ACTOR> loader component can create multiple Registry keys to force the svchost.exe process to load the final backdoor.,defense-impairment|persistence,defense-impairment|persistence|privilege-escalation,False
+"The <ACTOR> reverse shell component can listen for a specialized packet in TCP, UDP, or ICMP for activation.",command-and-control|persistence|stealth,command-and-control|persistence,False
+The <ACTOR> rootkit is implemented as a loadable kernel module (LKM).,persistence|privilege-escalation,privilege-escalation|stealth,False
+The <ACTOR> stager component can retrieve and execute the main payload.,command-and-control,execution,False
+"When executing with non-root permissions, <ACTOR> uses the the `shmget API` to create shared memory between other known <ACTOR> processes. This allows processes to communicate with each other and share their PID.",execution,execution|privilege-escalation|stealth,False

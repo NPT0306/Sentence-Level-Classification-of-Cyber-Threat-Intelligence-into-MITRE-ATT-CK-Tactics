@@ -1,0 +1,7 @@
+sentence,predicted,explained_tactic,key_words
+<ACTOR> used ntdsutil to obtain a copy of the victim environment ntds.dit file.,credential-access (0.94),credential-access,"obtain (+0.13), copy (+0.10), ntds.dit (+0.05), of (+0.03)"
+<ACTOR> has used scheduled tasks to establish persistence for installed tools.,"execution (0.97), persistence (0.98), privilege-escalation (0.98)",persistence,
+<ACTOR> enables SMBv1 during execution.,lateral-movement (0.96),lateral-movement,"SMBv1 (+0.95), enables (+0.11), execution. (+0.03), <ACTOR> (+0.01)"
+<ACTOR> has attempted to collect browser information.,discovery (1.00),discovery,browser (+0.01)
+<ACTOR> can embed a copy of PsExec within its payload and place it in a temporary directory.,"execution (0.89), privilege-escalation (0.59)",execution,"PsExec (+0.76), and (+0.42), within (+0.12), place (+0.11)"
+"The attackers sent spearphishing emails with a malicious attachment, then used PowerShell to download a second-stage payload and added a registry run key so it would start at every login.",execution (0.99),execution,"PowerShell (+0.81), used (+0.04), to (+0.02), spearphishing (+0.01)"
