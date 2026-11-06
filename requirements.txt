@@ -1,0 +1,21 @@
+# AIC211 Project Topic 10: ATT&CK tactic classification
+# Install with:  pip install -r requirements.txt
+# Python 3.10 or 3.11 is recommended (PyTorch may not support the newest Python yet).
+
+# Data and classical machine learning (scripts 01-04, 06, 07, notebook)
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+joblib>=1.3
+matplotlib>=3.7
+
+# Transformer model (scripts 05, 07, 08, and the DistilBERT step of the notebook)
+torch>=2.0
+transformers>=4.40
+
+# Web demo (python 08_explain_demo.py demo)
+gradio>=4.0
+
+# Notebook
+ipykernel>=6.0
